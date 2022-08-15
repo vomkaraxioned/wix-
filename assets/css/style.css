@@ -106,8 +106,14 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
 nav {
-  padding-top: 23px;
+  padding-top: 21px;
   display: flex;
   justify-items: center;
 }
@@ -117,15 +123,89 @@ nav {
 }
 
 .navigation {
+  width: 100%;
   display: flex;
 }
 
 .nav-item {
-margin-left: 10%;
+  padding: 11px;
+  margin-left: 1%;
 }
 
+.nav-item a{
+color: #fff;
+font-size: 16px;
+text-transform: capitalize;
+}
+.nav-item:nth-last-child(1) a{ color: #000;}
 
+.nav-item:nth-last-child(1){
+  padding: 0;
+  flex: 1;
+ text-align: right;
+}
 
+.nav-item:nth-child(3) >a::after{
+  padding-left: 10%;
+  font-family: 'FontAwesome';
+  font-weight: 900;
+  color: #fff;
+  content: '\f107';
+}
+
+.nav-item:nth-child(3):hover >a::after{
+  content: '\f106';
+}
+
+.subscriptions {
+  display: none;
+  flex-direction: column;
+}
+
+.subscription a{
+  padding: 10px 0;
+  display: block;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: right;
+}
+
+.nav-item:nth-child(3):hover .subscriptions{
+  display: flex;
+}
+
+.menu {
+  display: none;
+}
+
+.sign-btn{
+  padding: 12px 4%;
+  border-radius:50px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.nav-item:nth-last-child(1)::before{
+  padding-right: 5%;
+  font-family: 'FontAwesome';
+  font-size: 21px;
+  font-weight: 900;
+  color: #fff;
+  content: '\f0ac';
+}
+
+.nav-item:hover a{ color: #000;}
+
+.nav-item:nth-last-child(1):hover a{color: #fff;}
+
+.subscription:hover a{ color: #000;}
+
+.sign-btn:hover{
+  background-color: #000;
+  color: #fff;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -133,14 +213,177 @@ margin-left: 10%;
 /*=================================
   main styling starts here
 =================================*/
+/*banner start here*/
+.banner{
+  padding: 149px 0 434px 0;
+  background-image: url('../images/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.banner .wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.banner-title {
+  padding-bottom: 54px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
 
+.get-started-btn {
+  width: 10%;
+  padding: 17px 3%;
+  border-radius: 50px;
+  display: block;
+  background-color: #fff;
+  color: #4585d4;
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+}
 
+.get-started-btn:hover {
+  background-color: #4585d4;
+  color: #fff;
+}
+/*banner ends here*/
 
+/*intoduction start here*/
 
+.introduction .wrapper{
+  padding: 185px 0 194px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.introduction-title {
+  margin-right: 18%;
+  flex-basis: 40%;
+  font-size: 76px;
+  font-weight: 750;
+}
 
+.introduction-description {
+  flex-basis: 40%;
+  font-size: 21px;
+  line-height: 1.7;
+}
+
+.introduction-description .btn-start {
+  padding-top: 43px;
+}
+
+.btn-start {
+  width: 25%;
+  padding: 2px 0;
+  border-bottom: 2px solid #cdcdcd;
+  display: block;
+  color: #000;
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.btn-start::after
+{
+  font-family: 'FontAwesome';
+  font-weight: 900;
+  content: '\f105';
+}
+
+.btn-start:hover{
+  color: #4585d4;
+}
+
+/*introduction ends here */
+
+/*products start here*/
+.wix-products{
+  width: 98%;
+  border: 1px solid #000;
+  margin: 0 1%;
+  position: relative;
+}
+
+.wix-products .wrapper{
+  width: 100%;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product{
+  width: 50%;
+}
+
+.product-title.highlight{
+  width: 60%;
+  padding: 0 20%;
+  padding-top: 120px;
+  font-size: 34px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.product-title{
+  width: 60%;
+  padding: 22px 20% 34px 20%;
+  font-size: 34px;
+  text-transform: capitalize;
+}
+
+.product-description{
+  width: 60%;
+  padding: 0 20%;
+  padding-bottom: 52px;
+  font-size: 21px;
+}
+
+.product .btn-start {
+  margin: 0  0 110px 20% ;
+}
+
+.product:nth-child(2){
+  background-color: #9e18aa;
+  position: relative;
+}
+
+.design,.image-holder,.change-image,.srtting,.edit{
+  position: absolute;
+}
+
+.design:nth-child(1){
+  width: 432px;
+  height: 266px;
+  left: 95px;
+  background-color: #d0462b;
+}
+
+.design:nth-child(1){
+  width: 82px;
+  height: 83px;
+  left: 62px;
+  background-color: #9e18aa;
+  content: 'T';
+}
+
+.product figure{
+  border-radius: 50%;
+}
+
+img{
+  width: 100%;
+  object-fit: contain;
+}
 /*=================================
   main styling ends here
 =================================*/
@@ -148,9 +391,43 @@ margin-left: 10%;
 /*=================================
   footer styling starts here
 =================================*/ 
+footer{
+  padding: 92px 0 239px 0;
+}
 
+.categories-table {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
 
+.category-column {
+  margin-left: 10%;
+}
 
+.products-column,.companies-column,.communities-column,.supports-column,.category-column {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.product-type,.company-type,.community-type,.support-type{
+  width: 100%;
+  padding-bottom: 15px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.product-type:nth-child(1),.company-type:nth-child(1),.community-type:nth-child(1),.support-type:nth-child(1),.website{
+  padding-bottom: 30px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.product-type{
+
+}
 
 
 
