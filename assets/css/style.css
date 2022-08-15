@@ -100,15 +100,29 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 91%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+nav {
+  padding-top: 23px;
+  display: flex;
+  justify-items: center;
+}
 
+.logo {
 
+}
 
+.navigation {
+  display: flex;
+}
+
+.nav-item {
+margin-left: 10%;
+}
 
 
 
