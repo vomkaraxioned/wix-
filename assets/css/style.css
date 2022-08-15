@@ -384,6 +384,30 @@ img{
   width: 100%;
   object-fit: contain;
 }
+
+
+/* how to */
+
+.how-to{
+  padding: 197px 0 178px 0;
+  background-color: #4585d4;
+}
+
+.how-to .wrapper{
+  display: flex;
+}
+
+.create-website {
+width: 505;
+}
+
+.create-steps {
+width: 50%;
+}
+
+.our-services-info {
+  display: flex;
+}
 /*=================================
   main styling ends here
 =================================*/
