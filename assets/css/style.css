@@ -1020,6 +1020,37 @@ footer {
     color: #000;
 }
 
+.domains {
+    height: 334px;
+}
+
+.domains figure {
+    position: absolute;
+}
+
+.domains span {
+    width: 85%;
+    height: 290px;
+    position: absolute;
+    top: 0;
+    left: 79px;
+    right: 0;
+    background-color: #e92f3c;
+    text-indent: -9999px;
+}
+
+.feature:nth-child(5) figure:nth-last-child(1) {
+    top: 42px;
+    left: 0;
+}
+
+.feature:nth-child(5) figure:nth-last-child(2) {
+    top: 30px;
+    right: 30px;
+    bottom: 0;
+    left: 43px;
+}
+
 
 /*=================================
   footer styling ends here
