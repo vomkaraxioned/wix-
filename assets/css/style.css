@@ -842,6 +842,119 @@ figure:nth-child(7) {
 }
 
 
+.domains {
+  height: 334px;
+}
+
+.domains figure {
+  position: absolute;
+}
+
+.domains span {
+  width: 85%;
+  height: 290px;
+  position: absolute;
+  top: 0;
+  left: 79px;
+  right: 0;
+  background-color: #e92f3c;
+  text-indent: -9999px;
+}
+
+.feature:nth-child(5) figure:nth-last-child(1) {
+  top: 42px;
+  left: 0;
+  right: 45px;
+}
+
+.feature:nth-child(5) figure:nth-last-child(2) {
+  top: 30px;
+  right: 30px;
+  bottom: 0;
+  left: 43px;
+}
+
+.tripper {
+  padding: 10px 0 40px 10%;
+  position: relative;
+}
+
+.tripper figure,.road-tripper {
+  position: absolute;
+}
+
+.road-tripper{
+  width: 60%;
+  padding: 0 2%;
+  top: 35px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 1px 1px solid #000;
+}
+.tripper figure {
+  top: 60px;
+}
+
+.road-tripper-title {
+  padding:10px 0 ;
+  font-size: 16px ;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.tripper-description {
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.feature:nth-last-child(1) {
+  height: auto;
+}
+
+.feature:nth-last-child(1){
+  flex: 1 100%;
+  padding: 132px 0 216px 0;
+ display: flex;
+ align-items: center;
+}
+
+.feature:nth-last-child(1) a{
+  width: 32%;
+  padding: 10px 0;
+  border-bottom: 2px solid #000;
+  position: relative;
+  color: #000;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.feature:nth-last-child(1) a::after {
+  position: absolute;
+  top: 35%;
+  right: -21px;
+  font-family: 'FontAwesome';
+  font-size: 21px;
+  font-weight: 900;
+  content: '\f101';
+}
+
+.feature:nth-last-child(1) a:hover {
+  color: #4585d4;
+}
+/*feature end here*/
+
+/*manage business start here*/
+.our-services-info {
+  display: flex;
+}
+
+.business-info {
+   display: flex;
+   flex-direction: column;
+}
+
 /* how to */
 
 .how-to-create-website {
@@ -1019,38 +1132,6 @@ footer {
 .social-link:hover a::before {
     color: #000;
 }
-
-.domains {
-    height: 334px;
-}
-
-.domains figure {
-    position: absolute;
-}
-
-.domains span {
-    width: 85%;
-    height: 290px;
-    position: absolute;
-    top: 0;
-    left: 79px;
-    right: 0;
-    background-color: #e92f3c;
-    text-indent: -9999px;
-}
-
-.feature:nth-child(5) figure:nth-last-child(1) {
-    top: 42px;
-    left: 0;
-}
-
-.feature:nth-child(5) figure:nth-last-child(2) {
-    top: 30px;
-    right: 30px;
-    bottom: 0;
-    left: 43px;
-}
-
 
 /*=================================
   footer styling ends here
