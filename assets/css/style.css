@@ -313,7 +313,7 @@ nav {
 }
 
 .nav-item:hover a {
-    color: #000;
+    color: #4585d4;
 }
 
 .nav-item:nth-last-child(1):hover a {
@@ -412,8 +412,7 @@ nav {
 }
 
 .btn-start {
-    width: 18%;
-    padding: 2px 0;
+    padding: 2px 5%;
     border-bottom: 2px solid #cdcdcd;
     display: block;
     color: #000;
@@ -423,7 +422,7 @@ nav {
 }
 
 .introduction .btn-start {
-    width: 25%;
+    /* width: 25%; */
 }
 
 .btn-start::after {
