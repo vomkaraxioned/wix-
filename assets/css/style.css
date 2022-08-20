@@ -457,7 +457,6 @@ img{
     height: auto;
     object-fit: cover;
     object-position: center;
-    background-color: #656565;
 }
 
 .wix-products {
@@ -496,7 +495,8 @@ img{
     padding: 121px 0 108px 8%;
 }
 
-.product-title.highlight {
+ .product .product-title:nth-child(1) {
+    padding-bottom: 10px;
     width: 60%;
     font-size: 38px;
     font-weight: 900;
@@ -504,9 +504,9 @@ img{
 }
 
 .product-title {
-    width: 80%;
+    width: 100%;
     padding-bottom: 22px;
-    font-size: 34px;
+    font-size: 42px;
     text-transform: capitalize;
 }
 
@@ -586,11 +586,6 @@ img{
 
 .image-holder figure img {
     border-radius: 50%;
-}
-
-img {
-    width: 100%;
-    object-fit: contain;
 }
 
 .change-image {
@@ -702,6 +697,7 @@ img {
 /*feature start here */
 
 .feature-by-wix .wrapper {
+    width: 87%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -721,7 +717,6 @@ img {
 }
 
 .features {
-    padding: 0 5%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -729,13 +724,13 @@ img {
 
 .feature {
     width: 50%;
-    height: 514px;
+    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
 }
 
 .feature-title {
-    padding: 0 0 16px 10%;
+    padding: 30px 0 14px 0;
     display: flex;
     font-size: 26px;
     font-weight: 700;
@@ -744,12 +739,32 @@ img {
 }
 
 .feature .description {
-    padding-left: 10%;
     width: 60%;
+    padding: 0;
     font-size: 18px;
     text-align: left;
     line-height: 1.4;
 }
+
+.feature:nth-child(1) figure { width:76%;}
+
+.feature:nth-child(1) figure { padding-left: 3.5%;}
+
+.feature:nth-child(1) .feature-title,.feature:nth-child(1) .description { padding-left: 7%;}
+
+.feature:nth-child(2) figure { width:66%;}
+
+.feature:nth-child(2) figure { 
+   padding: 0 0 14px 22%;
+}
+
+.feature:nth-child(2) .feature-title,.feature:nth-child(2) .description { padding-left: 22%;}
+
+.feature:nth-child(3) figure { width:24%;}
+
+.feature:nth-child(3) figure { padding-left: 38%;}
+
+.feature:nth-child(3) .feature-title,.feature:nth-child(3) .description { padding-left: 21%;}
 
 
 .feature:nth-last-child(1) {
@@ -788,6 +803,8 @@ img {
 .feature:nth-last-child(1) a:hover {
   color: #4585d4;
 }
+
+
 /*feature end here*/
 
 /*manage business start here*/
@@ -796,19 +813,21 @@ img {
 }
 
 .business-info {
+    width: 50%;
     padding-bottom: 115px;
    display: flex;
    flex-direction: column;
 }
 
 .business { 
-    padding-right: 20%;
-    width: 70%;
+    width: 100%;
+    padding-left: 8%;
 }
 
 .business:first-child { padding-bottom: 121px;}
 
 .manage-busines-title {
+    width: 75%;
     padding-bottom: 52px;
     font-size: 42px ;
     font-weight: 700;
@@ -818,9 +837,9 @@ img {
 .manage-busines-title span { text-transform: lowercase;}
 
 .business-description { 
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     font-size: 21px;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 /* how to */
@@ -837,6 +856,7 @@ img {
 
 .create-website {
     width: 50%;
+    padding-left: 4%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -847,19 +867,39 @@ img {
 }
 
 .steps-title {
-    width: 70%;
+    width: 80%;
     padding-bottom: 28px;
     color: #fff;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 900;
+    position: relative;
+}
+
+.steps-title::after {
+    width: 10%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    content: "";
 }
 
 .our-services-info {
     display: flex;
 }
 
+.create-website .btn-start { 
+   margin-right: 10%;
+    color: #fff;
+}
+
+.create-website .btn-start:hover { color: #000;}
+
+
 .how-to-title {
     width: 80%;
+    padding-bottom: 128px;
     color: #fff;
     font-size: 100px;
     font-weight: 900;
@@ -875,7 +915,7 @@ img {
 }
 
 .step {
-    width: 80%;
+    width: 90%;
     margin-bottom: 48px;
     font-size: 21px;
     color: #fff;
@@ -895,15 +935,18 @@ footer {
     padding: 92px 0 239px 0;
 }
 
+footer .wrapper { width: 80%;}
+
 .categories-table {
     display: flex;
-    justify-content: center;
-    justify-items: center;
 }
 
 .category-column {
-    margin-left: 9%;
+    width: 20%;
+    justify-items: center;
 }
+
+.category-column:last-child { width: 30%;}
 
 .products-column,
 .companies-column,
@@ -934,9 +977,11 @@ footer {
 .website {
     padding-bottom: 30px;
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: capitalize;
 }
+
+.website-description { padding-bottom: 25px;}
 
 .website a {
     color: #000;
@@ -946,10 +991,6 @@ footer {
 .website a span {
     font-size: 26px;
     font-weight: 700;
-}
-
-.social-links {
-    padding-top: 35px;
 }
 
 .social-link {
@@ -1000,6 +1041,10 @@ footer {
 .social-link:hover a::before {
     color: #000;
 }
+
+footer a{  color: #454545;}
+
+footer a:hover { color: #4585d4;}
 
 /*=================================
   footer styling ends here
